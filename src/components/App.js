@@ -11,11 +11,10 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        <ol key="relativeListItem">
+        <ol key="relativeList">
           {this.state.name &&
             this.state.name.map((item, index) => {
-              let temp = "[relativeListItem" + { index };
-              return <li key={temp}>{item}</li>;
+              return <li key={"relativeListItem" + index}>{item}</li>;
             })}
         </ol>
       </div>
